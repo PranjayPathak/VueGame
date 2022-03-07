@@ -63,7 +63,7 @@ const app = Vue.createApp({
     },
     heal() {
       const playerHealValue = Math.floor(Math.random() * (8 - 20)) + 20;
-      const monsterHealValue = Math.floor(Math.random() * (5 - 16)) + 16;
+      const monsterHealValue = Math.floor(Math.random() * (7 - 18)) + 18;
       if (this.playerHealth + playerHealValue > 100) {
         this.playerHealth = 100;
       } else if (this.monsterHealth + monsterHealValue > 100) {
